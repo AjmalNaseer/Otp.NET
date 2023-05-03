@@ -1,0 +1,17 @@
+﻿<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TimebasedOTP.MainPage">
+
+    <StackLayout Orientation="Vertical" Margin="50">
+       
+        <StackLayout Orientation="Vertical">
+           
+            <Entry x:Name="userInput" Placeholder="Enter OTP" 
+               Keyboard="Numeric" HorizontalOptions="FillAndExpand" 
+                   PlaceholderColor="Black" BackgroundColor="White" TextColor="Black"/>
+            <Button x:Name="verifyButton" Text="Verify OTP" Clicked="VerifyOTP_Clicked" 
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
